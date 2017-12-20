@@ -8,5 +8,6 @@ public class CentosafeApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(CentosafeApplication.class, args);
+
 	}
 }
