@@ -17,7 +17,7 @@ import java.util.ArrayList;
  * time 下午9:14
  */
 @Service
-public class IndexService {
+public class LogService {
 
     private ArrayList<String> arrayList;
 
@@ -42,7 +42,7 @@ public class IndexService {
     }
 
     //update login.txt
-    public Result updateLogin(){
+    public Result updateLog(){
         String s = "last | more > login.txt";
         Object object = exec(s);
         if(object == null){
@@ -52,7 +52,7 @@ public class IndexService {
     }
 
     //update sshlogin.txt
-    public Result updateSshLogin(){
+    public Result updateSshLog(){
         String s = "tac /var/log/secure >sshlogin.txt";
         Object object = exec(s);
         if(object == null){
@@ -62,7 +62,7 @@ public class IndexService {
     }
 
     //get login.txt
-    public Result getLoginInfo(){
+    public Result getLogInfo(){
         if(arrayList == null){
            arrayList = new ArrayList<>();
         }
@@ -83,7 +83,7 @@ public class IndexService {
     }
 
     //get sshlogin.txt
-    public Result getSshLoginInfo(){
+    public Result getSshLogInfo(){
         if(arrayList == null){
             arrayList = new ArrayList<>();
         }
