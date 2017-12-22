@@ -1,5 +1,6 @@
 package com.wy.centosafe.domain.repository;
 
+import com.wy.centosafe.domain.Info;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**
@@ -7,5 +8,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
  * date 17-12-22
  * time 下午3:48
  */
-public interface Info extends JpaRepository<Info,Integer> {
+public interface InfoRepository extends JpaRepository<Info,Integer> {
 }
