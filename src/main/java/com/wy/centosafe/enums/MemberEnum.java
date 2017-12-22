@@ -12,11 +12,12 @@ public enum MemberEnum {
 
     private String name;
     private String password;
+    private String link;
 
     MemberEnum(String name, String password){
         this.name = name;
         this.password = password;
-
+        this.link = "http://127.0.0.1:8080/centosafe";
     }
 
 
@@ -26,5 +27,9 @@ public enum MemberEnum {
 
     public String getPassword() {
         return password;
+    }
+
+    public String getLink() {
+        return link;
     }
 }
