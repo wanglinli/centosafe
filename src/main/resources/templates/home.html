@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8" />
+    <title>admin</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">centos</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active"><a onclick="blog()"><span class="glyphicon glyphicon-book"></span> 博客<span class="sr-only">(current)</span></a></li>
+                <li><a onclick="github()"><i class="icon-github"></i> Github</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle"  data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-cog"></span> 系统管理<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/centosafe/memberManage"><i class="icon-user"></i> 用户管理</a></li>
+                        <li><a href="#"><i class="icon-user"></i> 角色管理</a></li>
+                        <li><a href="#"><i class="icon-wrench"></i> 权限管理</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#"><i class="icon-file"></i> 日志管理</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#"><i class="icon-hdd"></i> 资源管理</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="navbar-form navbar-left">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search" />
+                </div>
+                <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="icon-user"></i><label th:text="${session.name}"></label><span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#"><i class="icon-info"></i> 个人信息</a></li>
+                        <li><a href="#"><i class="icon-edit"></i> 记事本</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#"><i class="icon-signout"></i> 登出</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+<div class="row">
+    <div class="col-sm-2 col-xs-2 col-md-2">
+        <h4 style="text-align: center">Menu</h4>
+        <button class="btn btn-sm btn-success" onclick="loggedlog()">用户登陆日志</button>&nbsp;
+        <button class="btn btn-sm btn-warning" onclick="sshConneclog()">SSH登陆日志</button><br/><br/>
+        <button class="btn btn-sm btn-info" onclick="loggedlog()">系统进程查看</button>&nbsp;
+        <button class="btn btn-sm btn-info" onclick="sshConneclog()">SYS信息查看</button><br/><br/>
+        <button class="btn btn-sm" onclick="loggedlog()">主机用户列表</button>&nbsp;
+        <button class="btn btn-sm" onclick="sshConneclog()">SYS磁盘状态</button><br/><br/>
+    </div>
+    <div class="col-sm-8 col-xs-8 col-md-8">
+        <div class="table-responsive" style="padding-top: 5px">
+            <table class="table table-hover table-condensed" style="table-layout: fixed;" >
+                <tr>-
+                    <td width="10%">序号</td>
+                    <td width="">详情</td>
+                </tr>
+                <tbody id="logInfo">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="col-sm-2 col-xs-2 col-md-2"></div>
+</div>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/index.js"></script>
+<script src="js/log.js"></script>
+</body>
+</html>

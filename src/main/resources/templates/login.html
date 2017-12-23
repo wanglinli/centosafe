@@ -42,15 +42,10 @@
                 "password": $('#inputPassword').val()
             },
             success:function (data) {
-                if(data.code === 1){
+                if(data.code !== 0){
                     alert(data.msg);
                 }
-                if(data.code === 0){
-                    if(data.data === "admin"){
-                        console.log(data.data);
-                        window.location.href="http://127.0.0.1:8080/centosafe/admin";
-                    }
-                }
+                window.location.href=data.data;
             }
 
         })

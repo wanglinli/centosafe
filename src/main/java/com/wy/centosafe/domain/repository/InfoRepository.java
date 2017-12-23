@@ -9,4 +9,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
  * time 下午3:48
  */
 public interface InfoRepository extends JpaRepository<Info,Integer> {
+    Info getByTitle(String title);
 }

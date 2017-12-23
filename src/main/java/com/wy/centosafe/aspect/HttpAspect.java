@@ -1,5 +1,8 @@
 package com.wy.centosafe.aspect;
 
+import com.wy.centosafe.enums.ResultEnum;
+import com.wy.centosafe.exceptions.AuthException;
+import com.wy.centosafe.utils.ResultUtil;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.*;
@@ -21,20 +24,32 @@ public class HttpAspect {
     @Autowired
     private HttpServletRequest httpServletRequest;
 
+    @Autowired
+
+
     @Pointcut("execution(public * com.wy.centosafe.controller.PageController.*(..)))")
     public void check(){
     }
 
+    @Pointcut("execution(public * com.wy.centosafe.controller.PageController.userManage(..)))")
+    public void checkU(){}
 
-    @Around("check()")
-    public String doBefore(ProceedingJoinPoint pjo){
-        HttpSession session = httpServletRequest.getSession();
-        if(session.getAttribute("name") == null){
-            return "redirect:/forbidden";
-        }else {
-            return null;
-        }
+
+//        @Around("check()")
+//        public String doBefore(ProceedingJoinPoint pjo){
+//            HttpSession session = httpServletRequest.getSession();
+//            if(session.getAttribute("name") == null){
+//                return "redirect:/forbidden";
+//            }else {
+//                return null;
+//            }
+//        }
+
+    @Around("checkU()")
+    public void doBefore(ProceedingJoinPoint pjo) throws Exception{
+
+
+
     }
-
 }
 

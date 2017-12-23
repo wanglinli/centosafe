@@ -53,7 +53,7 @@ public class Role {
         this.content = content;
     }
 
-    public void setAuthSet(Set<Auth> authSet) {
-        this.authSet = authSet;
+    public Set<Auth> getAuthSet() {
+        return authSet;
     }
 }

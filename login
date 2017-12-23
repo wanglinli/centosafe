@@ -1,5 +1,14 @@
-wy       tty2         /dev/tty2        Thu Dec 21 08:16   still logged in
-reboot   system boot  4.14.5-300.fc27. Thu Dec 21 16:15   still running
+wy       tty2         /dev/tty2        Sat Dec 23 09:59   still logged in
+reboot   system boot  4.14.5-300.fc27. Sat Dec 23 17:59   still running
+wy       tty2         /dev/tty2        Thu Dec 21 21:34 - down  (1+01:37)
+wy       tty2         /dev/tty2        Thu Dec 21 21:13 - 21:34  (00:20)
+wy       tty2         /dev/tty2        Thu Dec 21 21:13 - 21:13  (00:00)
+wy       tty2         /dev/tty2        Thu Dec 21 20:53 - 21:13  (00:19)
+reboot   system boot  4.14.5-300.fc27. Fri Dec 22 04:52 - 23:11  (18:18)
+wy       tty2         /dev/tty2        Thu Dec 21 18:46 - down   (00:14)
+reboot   system boot  4.14.5-300.fc27. Fri Dec 22 02:45 - 19:00  (-7:-45)
+wy       tty2         /dev/tty2        Thu Dec 21 08:16 - down   (10:29)
+reboot   system boot  4.14.5-300.fc27. Thu Dec 21 16:15 - 18:45  (02:29)
 wy       tty2         /dev/tty2        Wed Dec 20 19:13 - down   (05:26)
 wy       tty2         /dev/tty2        Wed Dec 20 17:40 - 19:12  (01:31)
 wy       tty2         /dev/tty2        Wed Dec 20 17:07 - 17:39  (00:31)
