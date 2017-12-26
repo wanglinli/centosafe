@@ -29,7 +29,7 @@ public class MemberService {
     private HttpServletRequest httpServletRequest;
 
 
-    //全部用户信息
+    //用户列表
     public Result memberInfo(){
         return ResultUtil.success(memberRepository.findAll(new Sort(Sort.Direction.ASC, "id")));
     }

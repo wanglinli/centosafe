@@ -7,6 +7,8 @@ $(document).ready(function () {
         data:{},
         success:function (data) {
             if(data.code === 0){
+                var th='<tr style="text-align: center"><td>详情</td></tr>';
+                $("#info").append(th);
                 $.each(data.data,function (index,value) {
                     var tbody = '<tr><td>'+value+'</td></tr>';
                     $('#info').append(tbody);

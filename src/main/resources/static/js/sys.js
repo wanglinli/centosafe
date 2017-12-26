@@ -7,6 +7,8 @@ function getLoggedInfo() {
         data:{},
         success:function (data) {
             if(data.code === 0){
+                var th = '<tr style="text-align: center"><td>Linux用户登录日志</td></tr>';
+                $('#info').append(th);
                 $.each(data.data,function (index,value) {
                     var tbody = '<tr><td>'+value+'</td></tr>';
                     $('#info').append(tbody);
@@ -27,6 +29,8 @@ function getSshConnectInfo() {
         data:{},
         success:function (data) {
             if(data.code === 0){
+                var th = '<tr style="text-align: center"><td>用户ssh连接日志</td></tr>';
+                $('#info').append(th);
                 $.each(data.data,function (index,value) {
                     var tbody = '<tr><td>'+value+'</td></tr>';
                     $('#info').append(tbody);
@@ -47,6 +51,8 @@ function getVersionInfo() {
         data:{},
         success:function (data) {
             if(data.code === 0){
+                var th = '<tr style="text-align: center"><td>系统发行版本</td></tr>';
+                $('#info').append(th);
                 $.each(data.data,function (index,value) {
                     var tbody = '<tr><td>'+value+'</td></tr>';
                     $('#info').append(tbody);
@@ -67,6 +73,8 @@ function getTopInfo() {
         data:{},
         success:function (data) {
             if(data.code === 0){
+                var th = '<tr style="text-align: center"><td>top命令信息</td></tr>';
+                $('#info').append(th);
                 $.each(data.data,function (index,value) {
                     var tbody = '<tr><td>'+value+'</td></tr>';
                     $('#info').append(tbody);
@@ -87,6 +95,8 @@ function getDfInfo() {
         data:{},
         success:function (data) {
             if(data.code === 0){
+                var th = '<tr style="text-align: center"><td>磁盘状态</td></tr>';
+                $('#info').append(th);
                 $.each(data.data,function (index,value) {
                     var tbody = '<tr><td>'+value+'</td></tr>';
                     $('#info').append(tbody);
@@ -107,6 +117,8 @@ function getPsInfo() {
         data:{},
         success:function (data) {
             if(data.code === 0){
+                var th = '<tr style="text-align: center"><td>进程状态</td></tr>';
+                $('#info').append(th);
                 $.each(data.data,function (index,value) {
                     var tbody = '<tr><td>'+value+'</td></tr>';
                     $('#info').append(tbody);

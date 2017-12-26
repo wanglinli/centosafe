@@ -12,25 +12,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class PageController {
 
-
-    @RequestMapping("/admin")
-    public String admin(){
-        return "admin";
-    }
-
-    @RequestMapping("/ssh")
-    public String ssh(){
-        return "ssh";
-    }
-
-    @RequestMapping("/home")
+    @GetMapping("/home")
     public String home(){
         return "home";
     }
 
-    @GetMapping("/memberManage")
-    public String userManage(){
-        return "memberManage";
-    }
 
 }

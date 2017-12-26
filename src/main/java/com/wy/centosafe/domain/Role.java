@@ -16,10 +16,10 @@ public class Role {
     @GeneratedValue
     private Integer id;
 
-    //权限名
+    //名
     private String name;
 
-    //权限描述
+    //描述
     private String content;
 
     @ManyToMany(cascade = CascadeType.PERSIST, fetch=FetchType.LAZY)

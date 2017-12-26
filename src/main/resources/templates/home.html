@@ -19,7 +19,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">centos</a>
+            <a class="navbar-brand" href="#">Service</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -58,11 +58,11 @@
                 </div>
                 <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
                     <div class="list-group">
-                        <a href="#" class="list-group-item list-group-item-action"><i class="fa fa-list"></i> 用户列表</a>
-                        <a href="#" class="list-group-item list-group-item-action"><i class="fa fa-plus"></i> 新增用户</a>
-                        <a href="#" class="list-group-item list-group-item-action"><i class="fa fa-edit"></i> 更新用户</a>
-                        <a href="#" class="list-group-item list-group-item-action"><i class="fa fa-trash"></i> 删除用户</a>
-                        <a href="#" class="list-group-item list-group-item-action"><i class="fa fa-cog"></i> 分配角色</a>
+                        <a onclick="getMemberInfo()" class="list-group-item list-group-item-action">用户列表</a>
+                        <a href="#" class="list-group-item list-group-item-action">新增用户</a>
+                        <a href="#" class="list-group-item list-group-item-action">更新用户</a>
+                        <a href="#" class="list-group-item list-group-item-action">删除用户</a>
+                        <a href="#" class="list-group-item list-group-item-action">分配角色</a>
                     </div>
                 </div>
             </div>
@@ -74,11 +74,11 @@
                 </div>
                 <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
                     <div class="list-group">
-                        <a href="#" class="list-group-item list-group-item-action"><i class="fa fa-list"></i> 角色列表</a>
-                        <a href="#" class="list-group-item list-group-item-action"><i class="fa fa-plus"></i> 新增角色</a>
-                        <a href="#" class="list-group-item list-group-item-action"><i class="fa fa-edit"></i> 更新角色</a>
-                        <a href="#" class="list-group-item list-group-item-action"><i class="fa fa-trash"></i> 删除角色</a>
-                        <a href="#" class="list-group-item list-group-item-action"><i class="fa fa-cog"></i> 角色权限</a>
+                        <a onclick="getRoleInfo()" class="list-group-item list-group-item-action">角色列表</a>
+                        <a href="#" class="list-group-item list-group-item-action">新增角色</a>
+                        <a href="#" class="list-group-item list-group-item-action">更新角色</a>
+                        <a href="#" class="list-group-item list-group-item-action">删除角色</a>
+                        <a href="#" class="list-group-item list-group-item-action">角色权限</a>
                     </div>
                 </div>
             </div>
@@ -90,9 +90,10 @@
                 </div>
                 <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
                     <div class="list-group">
-                        <a href="#" class="list-group-item list-group-item-action"><i class="fa fa-plus"></i> 新增权限</a>
-                        <a href="#" class="list-group-item list-group-item-action"><i class="fa fa-edit"></i> 更新权限</a>
-                        <a href="#" class="list-group-item list-group-item-action"><i class="fa fa-trash"></i> 删除权限</a>
+                        <a onclick="getAuthInfo()" class="list-group-item list-group-item-action">权限列表</a>
+                        <a href="#" class="list-group-item list-group-item-action">新增权限</a>
+                        <a href="#" class="list-group-item list-group-item-action">更新权限</a>
+                        <a href="#" class="list-group-item list-group-item-action">删除权限</a>
                     </div>
                 </div>
             </div>
@@ -104,8 +105,8 @@
                 </div>
                 <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour">
                     <div class="list-group">
-                        <a onclick="getLoggedInfo()" class="list-group-item list-group-item-action"><i class="fa fa-list"></i> Linux登录日志</a>
-                        <a onclick="getSshConnectInfo()" class="list-group-item list-group-item-action"><i class="fa fa-link"></i> ssh连接日志</a>
+                        <a onclick="getLoggedInfo()" class="list-group-item list-group-item-action">Linux登录日志</a>
+                        <a onclick="getSshConnectInfo()" class="list-group-item list-group-item-action">ssh连接日志</a>
                     </div>
                 </div>
             </div>
@@ -118,10 +119,10 @@
                 </div>
                 <div id="collapseFiv" class="collapse" role="tabpanel" aria-labelledby="headingFiv">
                     <div class="list-group">
-                        <a onclick="getVersionInfo()" class="list-group-item list-group-item-action"><i class="fa fa-info-circle"></i> 发行版本</a>
-                        <a onclick="getTopInfo()" class="list-group-item list-group-item-action"><i class="fa fa-circle-o-notch fa-spin"></i> 内存空间</a>
-                        <a onclick="getDfInfo()" class="list-group-item list-group-item-action"><i class="fa fa-hdd-o"></i> 磁盘资源</a>
-                        <a onclick="getPsInfo()" class="list-group-item list-group-item-action"><i class="fa fa-tasks"></i> 用户进程</a>
+                        <a onclick="getVersionInfo()" class="list-group-item list-group-item-action">发行版本</a>
+                        <a onclick="getTopInfo()" class="list-group-item list-group-item-action">内存空间</a>
+                        <a onclick="getDfInfo()" class="list-group-item list-group-item-action">磁盘资源</a>
+                        <a onclick="getPsInfo()" class="list-group-item list-group-item-action">用户进程</a>
                     </div>
                 </div>
             </div>
@@ -130,9 +131,6 @@
     <div class="col-sm-8 col-xs-8 col-md-8">
         <div class="table-responsive" style="padding-top: 5px">
             <table class="table table-hover table-condensed" style="table-layout: fixed;">
-                <tr style="text-align: center">
-                    <td>详情</td>
-                </tr>
                 <tbody id="info">
                 </tbody>
             </table>
@@ -146,6 +144,9 @@
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/index.js"></script>
+<script src="js/member.js"></script>
+<script src="js/role.js"></script>
+<script src="js/auth.js"></script>
 <script src="js/sys.js"></script>
 </body>
 </html>
