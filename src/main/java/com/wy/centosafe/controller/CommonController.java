@@ -20,21 +20,18 @@ import org.springframework.web.bind.annotation.RestController;
 public class CommonController {
 
     @Autowired
-    private MemberService memberService;
-
-    @Autowired
     private CommonService commonService;
 
     //登陆
     @RequestMapping("/dologin")
     public Result dologin(Member member) throws Exception{
-        return memberService.dologin(member.getName(),member.getPassword());
+        return commonService.dologin(member.getName(),member.getPassword());
     }
 
     //注销
     @RequestMapping("/logout")
     public Result logout(){
-        return memberService.logout();
+        return commonService.logout();
     }
 
     //博客链接

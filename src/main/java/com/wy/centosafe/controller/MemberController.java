@@ -17,8 +17,14 @@ public class MemberController {
     @Autowired
     private MemberService memberService;
 
+    /**
+     * 全部用户信息
+     * @return
+     */
     @GetMapping(value = "/getMemberInfo")
     public Result getMemberInfo(){
         return memberService.memberInfo();
     }
+
+
 }

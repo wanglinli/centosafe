@@ -1,0 +1,25 @@
+wy       tty7         :0               Tue Dec 26 17:26    gone - no logout
+reboot   system boot  4.10.0-42-generi Tue Dec 26 17:26   still running
+reboot   system boot  4.10.0-42-generi Tue Dec 26 09:09   still running
+wy       tty7         :0               Mon Dec 25 12:42 - crash  (20:27)
+reboot   system boot  4.10.0-28-generi Mon Dec 25 12:42   still running
+wy       tty7         :0               Sun Dec 24 12:56 - crash  (23:45)
+reboot   system boot  4.10.0-28-generi Sun Dec 24 12:56   still running
+wy       tty7         :0               Sun Dec 24 12:06 - down   (00:50)
+reboot   system boot  4.10.0-28-generi Sun Dec 24 12:06 - 12:56  (00:50)
+wy       tty7         :0               Sun Dec 24 11:51 - down   (00:14)
+reboot   system boot  4.10.0-28-generi Sun Dec 24 11:50 - 12:05  (00:14)
+wy       tty7         :0               Sun Dec 24 11:31 - down   (00:18)
+reboot   system boot  4.10.0-28-generi Sun Dec 24 11:31 - 11:50  (00:19)
+wy       tty7         :0               Sun Dec 24 11:24 - down   (00:07)
+wy       tty7         :0               Sun Dec 24 10:32 - 11:23  (00:51)
+reboot   system boot  4.10.0-28-generi Sun Dec 24 10:32 - 11:31  (00:58)
+wy       tty7         :0               Sun Dec 24 10:20 - crash  (00:12)
+reboot   system boot  4.10.0-28-generi Sun Dec 24 10:19 - 11:31  (01:11)
+wy       tty7         :0               Sun Dec 24 10:16 - down   (00:00)
+reboot   system boot  4.10.0-28-generi Sun Dec 24 10:16 - 10:17  (00:00)
+wy       tty7         :0               Sun Dec 24 02:59 - down   (00:21)
+wy       tty7         :0               Sun Dec 24 18:55 - 02:59  (-15:-56)
+reboot   system boot  4.10.0-28-generi Sun Dec 24 18:55 - 03:21  (-15:-34)
+
+wtmp begins Sun Dec 24 18:55:36 2017
